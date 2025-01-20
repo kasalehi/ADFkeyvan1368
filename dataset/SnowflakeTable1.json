@@ -10,9 +10,7 @@
 		"schema": [
 			{
 				"name": "ORDER_ID",
-				"type": "NUMBER",
-				"precision": 38,
-				"scale": 0
+				"type": "VARCHAR"
 			},
 			{
 				"name": "PRICE",

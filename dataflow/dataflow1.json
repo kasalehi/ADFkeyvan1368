@@ -36,7 +36,7 @@
 				"          product_id as string,",
 				"          seller_id as string,",
 				"          shipping_limit_date as string,",
-				"          price as float,",
+				"          price as decimal(10,0),",
 				"          freight_value as string",
 				"     ),",
 				"     allowSchemaDrift: true,",
