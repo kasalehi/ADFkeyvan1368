@@ -1,0 +1,9 @@
+{
+	"name": "adfkeyvan1368",
+	"location": "australiaeast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "85cd5258-5ec0-4c1e-98a6-29d610e5e0b1",
+		"tenantId": "f34f1de8-606c-46ea-a6de-4bd318dbc65c"
+	}
+}
