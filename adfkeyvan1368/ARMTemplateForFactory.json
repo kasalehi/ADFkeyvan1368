@@ -185,14 +185,7 @@
 							"name": "sink1"
 						}
 					],
-					"transformations": [
-						{
-							"name": "filtercolumns"
-						},
-						{
-							"name": "aggregate1"
-						}
-					],
+					"transformations": [],
 					"scriptLines": [
 						"source(output(",
 						"          order_id as string,",
@@ -206,11 +199,7 @@
 						"     allowSchemaDrift: true,",
 						"     validateSchema: false,",
 						"     ignoreNoFilesFound: false) ~> source",
-						"source filter(price >=100) ~> filtercolumns",
-						"filtercolumns aggregate(groupBy(order_id,",
-						"          price),",
-						"     price_total = sum(price)) ~> aggregate1",
-						"aggregate1 sink(allowSchemaDrift: true,",
+						"source sink(allowSchemaDrift: true,",
 						"     validateSchema: false,",
 						"     input(",
 						"          ORDER_ID as string,",
